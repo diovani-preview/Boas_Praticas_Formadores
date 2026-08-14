@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Roleta de Nomes</title>
+
+  <link
+    rel="stylesheet"
+    href="./style.css"
+  >
+
+</head>
+
+<body>
+
+  <main class="app">
+
+    <header class="cabecalho">
+
+      <h1>ROLETA</h1>
+
+      <p>
+        Cada nome será sorteado apenas uma vez
+      </p>
+
+    </header>
+
+
+    <section class="area-roleta">
+
+      <div class="roleta-container">
+
+        <div class="ponteiro"></div>
+
+        <canvas
+          id="roleta"
+          width="900"
+          height="900"
+          aria-label="Roleta de nomes"
+        ></canvas>
+
+        <button
+          id="btnGirar"
+          class="botao-central"
+          type="button"
+        >
+          GIRAR
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <section class="painel">
+
+      <div class="resultado">
+
+        <span class="resultado-titulo">
+          NOME SORTEADO
+        </span>
+
+        <strong id="nomeSorteado">
+          —
+        </strong>
+
+      </div>
+
+
+      <div class="contador">
+
+        <span>
+          SORTEADOS
+        </span>
+
+        <strong id="contadorSorteados">
+          0 / 10
+        </strong>
+
+      </div>
+
+
+      <button
+        id="btnReiniciar"
+        class="botao-reiniciar"
+        type="button"
+      >
+        REINICIAR ROLETA
+      </button>
+
+    </section>
+
+  </main>
+
+
+  <script
+    src="./script.js"
+    defer
+  ></script>
+
+</body>
+
+</html>
